@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishabh Dey — Civil Engineering Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #FAF7F2;
+      color: #1A1918;
+      line-height: 1.45;
+      font-size: 10pt;
+      -webkit-font-smoothing: antialiased;
+    }
+    .resume-container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 44px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    @media print {
+      body {
+        background: #FFFFFF;
+      }
+      .resume-container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+        border: none;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    /* Toolbar for web viewing */
+    .web-toolbar {
+      max-width: 820px;
+      margin: 18px auto 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 18px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 4px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+    }
+    .web-toolbar .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #1A1918;
+      color: #FAF7F2;
+      padding: 6px 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      border: 1px solid #1A1918;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .web-toolbar .btn:hover {
+      background: #333;
+    }
+    .web-toolbar .btn-secondary {
+      background: transparent;
+      color: #1A1918;
+      border-color: rgba(0,0,0,0.25);
+    }
+    .web-toolbar .btn-secondary:hover {
+      background: rgba(0,0,0,0.04);
+    }
+
+    /* Resume Header */
+    header {
+      text-align: center;
+      border-bottom: 2px solid #1A1918;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 23pt;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #1A1918;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #383634;
+      margin-top: 3px;
+    }
+    .contact-bar {
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 8.5pt;
+      color: #4A4845;
+    }
+    .contact-bar a {
+      color: #1A1918;
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 13px;
+    }
+    .section-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #1A1918;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #1A1918;
+      margin-bottom: 7px;
+    }
+
+    /* Body Text & Lists */
+    p {
+      font-size: 9.2pt;
+      color: #2D2B28;
+      line-height: 1.48;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 18px;
+    }
+    li {
+      font-size: 9pt;
+      color: #2D2B28;
+      line-height: 1.45;
+      margin-bottom: 4px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    li strong {
+      color: #1A1918;
+    }
+
+    /* Entry Headers */
+    .entry {
+      margin-bottom: 8px;
+    }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.5pt;
+    }
+    .entry-title {
+      font-weight: 700;
+      color: #1A1918;
+    }
+    .entry-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 8.5pt;
+      color: #555;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .entry-subtitle {
+      font-size: 8.8pt;
+      color: #4A4845;
+      font-style: italic;
+      margin-top: 1px;
+    }
+
+    /* Project Subhead */
+    .project-header-main {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #1A1918;
+      margin-bottom: 3px;
+    }
+    .project-subhead {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #1A1918;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    /* Links */
+    a.doc-link {
+      color: #0c3d91;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Web View Toolbar -->
+  <div class="web-toolbar no-print">
+    <span>// RISHABH DEY · CIVIL ENGINEERING RESUME</span>
+    <div style="display: flex; gap: 8px;">
+      <a href="Rishabh_Dey_Resume.pdf" target="_blank" class="btn">VIEW ORIGINAL PDF ↗</a>
+      <a href="Rishabh_Dey_Resume.pdf" class="btn btn-secondary" download="Rishabh_Dey_Resume.pdf">DOWNLOAD PDF ↓</a>
+      <a href="../../index.html" class="btn btn-secondary">← BACK TO PORTFOLIO</a>
+    </div>
+  </div>
+
+  <div class="resume-container">
+    <header>
+      <h1>RISHABH DEY</h1>
+      <div class="tagline">Civil Engineering Student | AutoCAD 2D Drafting | Quantity &amp; Cost Estimation</div>
+      <div class="contact-bar">
+        <span>Chaibasa, Jharkhand, India</span>
+        <span>|</span>
+        <a href="mailto:deyrishabh630@gmail.com">deyrishabh630@gmail.com</a>
+        <span>|</span>
+        <span>+91 92635 41712</span>
+        <span>|</span>
+        <a href="https://linkedin.com/in/rishabh-dey-68039a264" target="_blank">linkedin.com/in/rishabh-dey-68039a264</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">P R O F E S S I O N A L &nbsp; S U M M A R Y</div>
+      <p>
+        B.Tech Civil Engineering student with a strong interest in construction and project planning. Skilled in preparing floor plans, elevations, sections, and complete drawing sets in AutoCAD 2D and Revit, reading and interpreting architectural drawings, and building cost estimates in Excel with AI-assisted checks. Familiar with BIM fundamentals. Seeking an internship or entry-level opportunity in drafting, estimation, or site planning.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">T E C H N I C A L &nbsp; S K I L L S</div>
+      <ul>
+        <li><strong>AutoCAD 2D Drafting:</strong> Floor plans, layout drawings, sections, elevations, and detailed construction drawings with accurate dimensioning, annotation, and layer management, following engineering standards.</li>
+        <li><strong>Revit &amp; BIM:</strong> Building modeling in Revit using BIM workflows, including parametric elements, levels, views, and drawing sheets, with an understanding of BIM fundamentals and coordinated project information.</li>
+        <li><strong>3D Modeling:</strong> Creating 3D building models and visualising layouts, spaces, and building elements to support design review and drawing production.</li>
+        <li><strong>Drawing Interpretation:</strong> Reading architectural and construction drawings (plans, sections, elevations, scales, symbols, and notes) to understand building layouts and derive work quantities.</li>
+        <li><strong>Cost Estimation (Excel + AI):</strong> Quantity take-off and cost estimates prepared in Excel; AI tools used to speed up calculations, cross-check figures, and organise estimates clearly.</li>
+        <li><strong>Tendering &amp; Bid Process:</strong> Preparation of bid documents, tender evaluation, and contractor selection procedures.</li>
+        <li><strong>Project Planning:</strong> Floor-wise work planning and organised drawing documentation.</li>
+        <li><strong>Software:</strong> AutoCAD, Revit, Microsoft Excel, AI-assisted tools.</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <div class="section-title">P R O J E C T S</div>
+      <div class="project-header-main">G+1 Residential Building: Floor Plans, Work Plan &amp; Drawing Documentation</div>
+      <ul style="margin-bottom: 6px;">
+        <li>Prepared ground floor and first floor plans for a G+1 residential building in AutoCAD, with dimensions, room layouts, and annotations.</li>
+        <li>Developed a work plan for both floors and compiled complete drawing documentation for the building.</li>
+      </ul>
+
+      <div class="project-subhead">Additional AutoCAD Drafting Projects</div>
+      <ul>
+        <li><strong>Residential Building Floor Plan Design</strong> – drafted a complete residential floor plan.</li>
+        <li><strong>Multi-Apartment Floor Plan</strong> – prepared a multi-unit apartment layout.</li>
+        <li><strong>Furnished 3 BHK Floor Plan</strong> – furnished layout showing room arrangement and furniture placement.</li>
+        <li><strong>Section Views of Residential Buildings</strong> – prepared sectional drawings with proper dimensioning.</li>
+        <li><strong>Elevation of an Apartment</strong> – prepared elevation drawings of an apartment building.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">E D U C A T I O N</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">B.Tech in Civil Engineering</span>
+          <span class="entry-date">2025 – 2029 (Expected)</span>
+        </div>
+        <div class="entry-subtitle">Chaibasa Engineering College</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Intermediate (Class XII)</span>
+          <span class="entry-date">2023 – 2025</span>
+        </div>
+        <div class="entry-subtitle">Chief Minister School of Excellence, Nadia Hindu</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Matriculation (Class X)</span>
+          <span class="entry-date">2023</span>
+        </div>
+        <div class="entry-subtitle">Sheela Agarwal Saraswati Vidya Mandir</div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <div class="section-title">C E R T I F I C A T I O N S</div>
+      <ul>
+        <li>AutoCAD Workshop Certification – <a class="doc-link" href="https://drive.google.com/file/d/1FWnqsbN0KWfNtY7lS23VORrBEKIEX1YV/view?usp=sharing" target="_blank">View certificate</a></li>
+        <li>Tendering and Bid Process Certification – <a class="doc-link" href="https://drive.google.com/file/d/1tK17UspLVR3kTkDD1RQwixeQaqYMzHE8/view?usp=sharing" target="_blank">View certificate</a></li>
+        <li>BIM Fundamentals Workshop Certification – <a class="doc-link" href="https://drive.google.com/file/d/1hcWzq-l94GDkrdK3VyRbF9pGm7B8un5g/view?usp=sharing" target="_blank">View certificate</a></li>
+      </ul>
+    </section>
+
+    <!-- Additional Information -->
+    <section style="margin-bottom: 0;">
+      <div class="section-title">A D D I T I O N A L &nbsp; I N F O R M A T I O N</div>
+      <ul>
+        <li><strong>Soft Skills:</strong> Leadership, good communication, quick learner.</li>
+        <li><strong>Languages:</strong> English, Hindi, Bengali.</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

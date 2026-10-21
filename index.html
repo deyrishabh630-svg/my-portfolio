@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rishabh Dey | Civil Engineering &amp; AEC Portfolio</title>
+  <meta name="description"
+    content="Civil Engineering portfolio featuring AutoCAD 2D drafting, residential floor plans, quantity estimation, Revit + BIM and project documentation.">
+  <meta name="author" content="Rishabh Dey">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAF7F2">
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/rd-logo-square.png">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Rishabh Dey | Civil Engineering &amp; AEC Portfolio">
+  <meta property="og:description"
+    content="Civil Engineering portfolio featuring AutoCAD 2D drafting, residential floor plans, quantity estimation, Revit + BIM and project documentation.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="assets/images/rd-logo-square.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="assets/images/rd-logo-square.png">
+
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://rishabhdey.me/">
+
+  <!-- Google Fonts: Modern Headings (DM Sans), Clean UI/Body (Inter), Technical Monospace (IBM Plex Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Core AEC Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme initialization script (prevents theme flash) -->
+  <script src="js/theme.js"></script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Rishabh Dey",
+        "image": "assets/images/rd-logo-square.png",
+        "jobTitle": "Civil Engineering Student",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Chaibasa Engineering College"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chaibasa",
+          "addressRegion": "Jharkhand",
+          "addressCountry": "India"
+        },
+        "email": "mailto:deyrishabh630@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/rishabh-dey-68039a264/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Rishabh Dey — Civil Engineering Portfolio",
+        "description": "Technical drafting, BIM modeling, quantity estimation, and civil engineering project documentation."
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+<body>
+
+
+  <!-- ==========================================================================
+       SITE NAVIGATION (Rule 06 & HoverDev Side-Stagger Integration)
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-inner">
+      <div class="brand-wrap">
+        <a href="#/" class="brand-title" onclick="window.showHomeView();">Rishabh Dey</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-route="about"><span class="nav-link-indicator"></span>About</a>
+          </li>
+          <li><a href="#education" class="nav-link" data-route="education"><span
+                class="nav-link-indicator"></span>Education</a></li>
+          <li><a href="#work" class="nav-link" data-route="work"><span class="nav-link-indicator"></span>Work</a></li>
+          <li><a href="#skills" class="nav-link" data-route="skills"><span class="nav-link-indicator"></span>Skills</a>
+          </li>
+          <li><a href="#workflow" class="nav-link" data-route="workflow"><span
+                class="nav-link-indicator"></span>Workflow</a></li>
+          <li><a href="#certifications" class="nav-link" data-route="certifications"><span
+                class="nav-link-indicator"></span>Certifications</a></li>
+          <li><a href="#contact" class="nav-link" data-route="contact"><span
+                class="nav-link-indicator"></span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-stagger-btn mobile-menu-btn" id="sideNavToggleBtn" type="button"
+          aria-label="Toggle Side Stagger Navigation" aria-expanded="false">
+          <span class="nav-stagger-bars">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+          </span>
+          <span class="nav-stagger-text font-mono">EXPLORE</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SIDE-STAGGER NAVIGATION DRAWER (HoverDev Cards Merged)
+       ========================================================================== -->
+  <div class="mobile-drawer side-stagger-drawer" id="sideStaggerDrawer" role="dialog" aria-modal="true"
+    aria-label="Side Navigation">
+    <div class="drawer-header">
+      <div class="drawer-header-brand">
+        <div>
+          <span class="drawer-code font-mono">00 // DIRECTORY</span>
+          <span class="drawer-title">Navigation &amp; Sections</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" type="button" aria-label="Close navigation">✕</button>
+    </div>
+
+    <div class="drawer-cards-container">
+      <div class="drawer-cards-grid">
+        <!-- 01 Card: About -->
+        <a href="#about" class="hoverdev-card group" data-stagger="1">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">01</span>
+          </div>
+          <h3 class="hoverdev-card-title">About</h3>
+          <p class="hoverdev-card-subtitle">Profile &amp; Technical Focus</p>
+        </a>
+
+        <!-- 02 Card: Education -->
+        <a href="#education" class="hoverdev-card group" data-stagger="2">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">02</span>
+          </div>
+          <h3 class="hoverdev-card-title">Education</h3>
+          <p class="hoverdev-card-subtitle">Academic Timeline &amp; College</p>
+        </a>
+
+        <!-- 03 Card: Selected Work -->
+        <a href="#work" class="hoverdev-card group" data-stagger="3">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">03</span>
+          </div>
+          <h3 class="hoverdev-card-title">Selected Work</h3>
+          <p class="hoverdev-card-subtitle">AutoCAD 2D Drawing Sets</p>
+        </a>
+
+        <!-- 04 Card: Capabilities (Tabs) -->
+        <a href="#skills" class="hoverdev-card group" data-stagger="4">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <line x1="3" y1="9" x2="21" y2="9" />
+            <line x1="9" y1="21" x2="9" y2="9" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="9" y1="21" x2="9" y2="9" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">04</span>
+          </div>
+          <h3 class="hoverdev-card-title">Capabilities</h3>
+          <p class="hoverdev-card-subtitle">Shift Highlight Tabs</p>
+        </a>
+
+        <!-- 05 Card: Workflow -->
+        <a href="#workflow" class="hoverdev-card group" data-stagger="5">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="18" cy="18" r="3" />
+            <circle cx="6" cy="6" r="3" />
+            <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+            <line x1="6" y1="9" x2="6" y2="21" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="18" r="3" />
+              <circle cx="6" cy="6" r="3" />
+              <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+              <line x1="6" y1="9" x2="6" y2="21" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">05</span>
+          </div>
+          <h3 class="hoverdev-card-title">AEC Workflow</h3>
+          <p class="hoverdev-card-subtitle">Connected 6-Stage Process</p>
+        </a>
+
+        <!-- 06 Card: Certifications -->
+        <a href="#certifications" class="hoverdev-card group" data-stagger="6">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="7" />
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7" />
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">06</span>
+          </div>
+          <h3 class="hoverdev-card-title">Certifications</h3>
+          <p class="hoverdev-card-subtitle">CAD &amp; Revit BIM Verified</p>
+        </a>
+
+        <!-- 07 Card: Contact -->
+        <a href="#contact" class="hoverdev-card group" data-stagger="7">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">07</span>
+          </div>
+          <h3 class="hoverdev-card-title">Contact</h3>
+          <p class="hoverdev-card-subtitle">Direct Inquiries &amp; Links</p>
+        </a>
+
+        <!-- 08 Card: Documentation Archive -->
+        <a href="#/documentation" onclick="window.showDocumentationView();" class="hoverdev-card group"
+          data-stagger="8">
+          <div class="hoverdev-card-gradient"></div>
+          <svg class="hoverdev-watermark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+            <line x1="1" y1="10" x2="23" y2="10" />
+          </svg>
+          <div class="hoverdev-card-header">
+            <svg class="hoverdev-front-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg>
+            <span class="hoverdev-card-num font-mono">08</span>
+          </div>
+          <h3 class="hoverdev-card-title">Documentation</h3>
+          <p class="hoverdev-card-subtitle">Drawing Specs &amp; PDFs</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <p class="font-mono" style="font-size: 11px; color: var(--ink-muted);">RISHABH DEY · CIVIL ENGINEERING · CHAIBASA,
+        JHARKHAND</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HOME VIEW CONTAINER
+       ========================================================================== -->
+  <div id="view-home">
+
+    <!-- 01 — HERO SECTION (Rules 02, 07, 08) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrap" aria-hidden="true">
+        <img class="hero-img" src="assets/images/hero.jpg" alt="AEC architectural drafting background" loading="eager">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-layout-grid">
+          <div class="hero-text-col">
+            <div class="hero-eyebrow-row reveal">
+              <span class="hero-eyebrow">AEC / CIVIL ENGINEERING</span>
+              <span class="hero-status-pill"><span class="status-pulse-dot"></span>STATUS: ACTIVE · JHARKHAND, IN</span>
+            </div>
+
+            <h1 class="hero-title reveal">
+              RISHABH
+              <span class="name-second">DEY</span>
+            </h1>
+
+            <!-- DYNAMIC TYPING EFFECT -->
+            <div class="hero-typing-wrap reveal">
+              <span class="hero-typing-prompt font-mono">SPEC //</span>
+              <div class="hero-typing-box">
+                <span class="hero-typed-text" id="heroTypedText">AutoCAD 2D Drafting</span>
+                <span class="hero-typed-cursor" aria-hidden="true">|</span>
+              </div>
+            </div>
+
+
+            <div class="hero-cta-group reveal">
+              <a href="#work" class="btn btn-primary btn-draw-outline">
+                <span>VIEW SELECTED WORK →</span>
+                <span class="btn-draw-line btn-draw-top"></span>
+                <span class="btn-draw-line btn-draw-right"></span>
+                <span class="btn-draw-line btn-draw-bottom"></span>
+                <span class="btn-draw-line btn-draw-left"></span>
+              </a>
+              <a href="assets/resume/Rishabh_Dey_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-draw-outline" data-action="view-resume" title="View Rishabh Dey's Resume">
+                <span>VIEW RESUME →</span>
+                <span class="btn-draw-line btn-draw-top"></span>
+                <span class="btn-draw-line btn-draw-right"></span>
+                <span class="btn-draw-line btn-draw-bottom"></span>
+                <span class="btn-draw-line btn-draw-left"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-portrait-col reveal">
+            <div class="hero-portrait-frame">
+              <div class="hero-portrait-header">
+                <span class="hero-portrait-greeting">Hii , I'm Rishabh <span class="wave-emoji">👋</span></span>
+              </div>
+              <div class="hero-portrait-viewport" id="heroPortraitViewport">
+                <img id="heroProfileImg" class="hero-portrait-img" src="assets/images/profile.jpg"
+                  alt="Rishabh Dey - Civil Engineering Student" title="Click to change photo">
+                <div class="hero-portrait-placeholder" id="heroPortraitPlaceholder">
+                  <div class="hero-portrait-icon">👤</div>
+                  <div class="hero-portrait-title">RISHABH DEY</div>
+                  <div class="hero-portrait-sub">CIVIL ENGINEERING STUDENT</div>
+                  <button type="button" class="btn btn-accent btn-sm" id="addHeroPhotoBtn" style="margin-top: 6px;">ADD
+                    PHOTO +</button>
+                  <span
+                    style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: var(--ink-dim); margin-top: 4px;">PNG
+                    / JPG / WEBP</span>
+                </div>
+                <input type="file" id="heroPhotoInput" class="hidden-file-input" accept="image/*">
+                <button type="button" id="changePhotoBtn" class="hero-photo-hover-btn" title="Click to change photo">📷
+                  CHANGE PHOTO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bottom-bar reveal">
+          <div class="hero-location-tag">
+            <span class="hero-location-dot"></span>
+            BASED IN JHARKHAND, INDIA · B.TECH CIVIL ENGINEERING · 2025–2029
+          </div>
+          <a href="#about" class="hero-scroll-btn" aria-label="Scroll down to about section">
+            SCROLL TO EXPLORE ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- 02 — ABOUT SECTION (Rules 19 & 22) -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">02 / PROFILE</span>
+              <h2>ABOUT</h2>
+              <p class="sec-subtitle">Professional background, educational focus, and engineering interests.</p>
+            </div>
+            <span class="sec-stamp">CIVIL ENGINEERING</span>
+          </div>
+
+          <div class="about-grid reveal">
+            <div class="about-main-col">
+              <div class="about-statement">
+                B.Tech Civil Engineering student focused on technical drafting, BIM modeling, drawing interpretation,
+                quantity
+                estimation, and structural project documentation.
+              </div>
+              <div class="about-body">
+                <p>
+                  Pursuing Civil Engineering with a practical emphasis on the architectural, structural, and
+                  documentation workflows that govern physical construction. Dedicated to producing clean, accurate
+                  AutoCAD 2D drawing sets and reliable cost estimates.
+                </p>
+                <p>
+                  Continuously developing expertise across building information modeling (BIM), Autodesk Revit, quantity
+                  surveying, and
+                  contract tendering procedures.
+                </p>
+              </div>
+
+              <!-- Additional Information: Soft skills & Languages (Rule 22) -->
+              <div class="additional-info-grid">
+                <div class="info-block">
+                  <h4>Soft Skills</h4>
+                  <p>Leadership capabilities, good communication, quick learner.</p>
+                </div>
+                <div class="info-block">
+                  <h4>Languages</h4>
+                  <p>English, Hindi, Bengali.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Facts Card (Rule 19) -->
+            <div class="about-facts-card">
+              <div class="facts-title">TECHNICAL FACTS</div>
+              <div class="fact-row">
+                <span class="fact-label">Program</span>
+                <span class="fact-val">B.Tech Civil Engineering</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Timeline</span>
+                <span class="fact-val">2025–2029 (Expected)</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Institution</span>
+                <span class="fact-val">Chaibasa Engineering College</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Location</span>
+                <span class="fact-val">Jharkhand, India</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Focus Areas</span>
+                <span class="fact-val">Drafting · Estimation · BIM + Revit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 — EDUCATION SECTION (Rule 20) -->
+      <section id="education" class="education-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">03 / TIMELINE</span>
+              <h2>EDUCATION</h2>
+              <p class="sec-subtitle">Academic trajectory and civil engineering studies.</p>
+            </div>
+            <span class="sec-stamp">ACADEMIC RECORD</span>
+          </div>
+
+          <div class="timeline-list reveal">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-year">2025–2029 (EXPECTED)</div>
+              <h3 class="timeline-title">B.Tech, Civil Engineering</h3>
+              <p class="timeline-institution">Chaibasa Engineering College</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-year">2023–2025</div>
+              <h3 class="timeline-title">Intermediate (Class XII)</h3>
+              <p class="timeline-institution">Chief Minister School of Excellence, Nadia Hindu</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-year">2023</div>
+              <h3 class="timeline-title">Matriculation (Class X)</h3>
+              <p class="timeline-institution">Sheela Agarwal Saraswati Vidya Mandir</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 — SELECTED WORK (Rules 09, 10, 11, 12, 13, 15) -->
+      <section id="work" class="selected-work-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">04 / PROJECTS</span>
+              <h2>SELECTED WORK</h2>
+              <p class="sec-subtitle">Technical drawings, layouts and civil engineering documentation.</p>
+            </div>
+            <div class="sec-head-actions">
+              <div class="projects-slider-nav">
+                <div class="slider-counter" id="sliderCounter" aria-live="polite">
+                  <span class="slide-active-num" id="slideActiveNum">01</span>
+                  <span class="slide-divider">/</span>
+                  <span class="slide-total-num" id="slideTotalNum">04</span>
+                </div>
+                <div class="slider-nav-btns">
+                  <button type="button" class="slider-nav-btn prev" id="sliderPrevBtn" aria-label="Previous Projects"
+                    title="Previous Projects">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button type="button" class="slider-nav-btn next" id="sliderNextBtn" aria-label="Next Projects"
+                    title="Next Projects">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDING WINDOW (All Projects A-101 through A-104) -->
+          <div class="projects-slider-wrapper reveal">
+            <button type="button" class="slider-side-arrow prev" id="sliderSidePrev" aria-label="Previous Projects">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <div class="projects-slider-track" id="projectsSliderTrack">
+
+              <!-- A-101 -->
+              <article class="project-card" id="project-a101">
+                <div class="card-drawing-preview" data-action="view-fullscreen" data-project="A-101"
+                  title="Click to view drawings: 2-Storey Residential Building Full CAD Package">
+                  <img id="preview-A-101" class="preview-img visible" src="assets/images/a101-sheet-01-working-plan.png"
+                    alt="A-101 2-Storey Residential Building Full CAD Package" data-action="view-fullscreen"
+                    data-project="A-101">
+                  <div class="placeholder-content" id="placeholder-A-101" style="display: none;">
+                    <div class="placeholder-crosshair-icon" style="width:36px;height:36px;font-size:16px;">✛</div>
+                    <span class="placeholder-label" style="font-size:11px;">A-101 // DRAWING PREVIEW</span>
+                    <p class="placeholder-desc" style="font-size:12px;">No drawing uploaded yet.</p>
+                    <button type="button" class="btn btn-technical btn-sm" data-action="add-drawing"
+                      data-project="A-101">ADD DRAWING +</button>
+                  </div>
+                  <input type="file" id="file-input-A-101" class="hidden-file-input" data-project="A-101"
+                    accept="image/*">
+                </div>
+                <div class="card-body">
+                  <div class="card-top-row">
+                    <span class="card-code">A-101</span>
+                    <span class="card-software-badge">AutoCAD 2D</span>
+                  </div>
+                  <h3 class="card-title">2-Storey Residential Building: Full CAD Package</h3>
+                  <p class="card-desc">Architectural floor plans, structural column layouts and electrical wiring plans
+                    for a compact family home, ready for construction reference and design study.</p>
+                  <div class="card-actions">
+                    <a href="assets/projects/A-101/A-101_2_Storey_Residential_Building_Documentation.pdf"
+                      target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+                      data-action="view-project-docs" data-project="doc-A-101" title="View Full Documentation PDF">VIEW
+                      FULL DOCUMENTATION →</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- A-102 -->
+              <article class="project-card" id="project-a102">
+                <div class="card-drawing-preview" data-action="view-fullscreen" data-project="A-102"
+                  title="Click to view drawing: Central-Core Multi-Dwelling Unit (MDU) Floor Plan">
+                  <img id="preview-A-102" class="preview-img visible" src="assets/images/a102-floor-plan.png"
+                    alt="A-102 Central-Core Multi-Dwelling Unit (MDU) Floor Plan" data-action="view-fullscreen"
+                    data-project="A-102">
+                  <div class="placeholder-content" id="placeholder-A-102" style="display: none;">
+                    <div class="placeholder-crosshair-icon" style="width:36px;height:36px;font-size:16px;">✛</div>
+                    <span class="placeholder-label" style="font-size:11px;">A-102 // DRAWING PREVIEW</span>
+                    <p class="placeholder-desc" style="font-size:12px;">No drawing uploaded yet.</p>
+                    <button type="button" class="btn btn-technical btn-sm" data-action="add-drawing"
+                      data-project="A-102">ADD DRAWING +</button>
+                  </div>
+                  <input type="file" id="file-input-A-102" class="hidden-file-input" data-project="A-102"
+                    accept="image/*">
+                </div>
+                <div class="card-body">
+                  <div class="card-top-row">
+                    <span class="card-code">A-102</span>
+                    <span class="card-software-badge">AutoCAD 2D</span>
+                  </div>
+                  <h3 class="card-title">Central-Core Multi-Dwelling Unit (MDU) Floor Plan</h3>
+                  <p class="card-desc">Typical multi-family floor plan featuring four 2BHK units, complete space layout,
+                    vertical core access, and balcony placements.</p>
+                  <div class="card-actions">
+                    <a href="assets/projects/A-102/A-102_Central_Core_MDU_Documentation.pdf" target="_blank"
+                      rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-action="view-project-docs"
+                      data-project="doc-A-102" title="View Full Documentation PDF">VIEW FULL DOCUMENTATION →</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- A-103 -->
+              <article class="project-card" id="project-a103">
+                <div class="card-drawing-preview" data-action="view-fullscreen" data-project="A-103"
+                  title="Click to view drawings: Main Model, Model 1, Model 2, Model 3">
+                  <img id="preview-A-103" class="preview-img visible" src="assets/images/a103-main-model.png"
+                    alt="A-103 Compact 2BHK: Main Model — Architectural Plan, Elevation &amp; Section AB"
+                    data-action="view-fullscreen" data-project="A-103">
+                  <div class="placeholder-content" id="placeholder-A-103" style="display: none;">
+                    <div class="placeholder-crosshair-icon" style="width:36px;height:36px;font-size:16px;">✛</div>
+                    <span class="placeholder-label" style="font-size:11px;">A-103 // DRAWING PREVIEW</span>
+                    <p class="placeholder-desc" style="font-size:12px;">No drawing uploaded yet.</p>
+                    <button type="button" class="btn btn-technical btn-sm" data-action="add-drawing"
+                      data-project="A-103">ADD DRAWING +</button>
+                  </div>
+                  <input type="file" id="file-input-A-103" class="hidden-file-input" data-project="A-103"
+                    accept="image/*">
+                </div>
+                <div class="card-body">
+                  <div class="card-top-row">
+                    <span class="card-code">A-103</span>
+                    <span class="card-software-badge">AutoCAD 2D</span>
+                  </div>
+                  <h3 class="card-title">Compact 2BHK Residential Unit: Plan, Elevation & Section</h3>
+                  <p class="card-desc">Compact 2BHK AutoCAD 2D drafting comprising ground plan, front elevation, and
+                    Section AB with dimensioned room layouts, staircase, parking, and structural foundation details.
+                  </p>
+                  <div class="card-actions">
+                    <a href="assets/projects/A-103/A-103_Residential_Unit_Documentation.pdf" target="_blank"
+                      rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-action="view-project-docs"
+                      data-project="doc-A-103" title="View Full Documentation PDF">VIEW FULL DOCUMENTATION →</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- A-104 -->
+              <article class="project-card" id="project-a104">
+                <div class="card-drawing-preview">
+                  <img id="preview-A-104" class="preview-img visible" src="assets/images/a104-furnished-plan.png"
+                    alt="A-104 Furnished 3 BHK Floor Plan" data-action="view-fullscreen" data-project="A-104">
+                  <div class="placeholder-content" id="placeholder-A-104" style="display: none;">
+                    <div class="placeholder-crosshair-icon" style="width:36px;height:36px;font-size:16px;">✛</div>
+                    <span class="placeholder-label" style="font-size:11px;">A-104 // DRAWING PREVIEW</span>
+                    <p class="placeholder-desc" style="font-size:12px;">No drawing uploaded yet.</p>
+                    <button type="button" class="btn btn-technical btn-sm" data-action="add-drawing"
+                      data-project="A-104">ADD DRAWING +</button>
+                  </div>
+                  <input type="file" id="file-input-A-104" class="hidden-file-input" data-project="A-104"
+                    accept="image/*">
+                </div>
+                <div class="card-body">
+                  <div class="card-top-row">
+                    <span class="card-code">A-104</span>
+                    <span class="card-software-badge">AutoCAD 2D</span>
+                  </div>
+                  <h3 class="card-title">Furnished 3 BHK Floor Plan</h3>
+                  <p class="card-desc">Furnished layout showing room arrangement and furniture placement.</p>
+                  <div class="card-actions">
+                    <a href="assets/projects/A-104/A-104_Floor_Plan_Documentation.pdf" target="_blank"
+                      rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-action="view-project-docs"
+                      data-project="doc-A-104" title="View Full Documentation PDF">VIEW FULL DOCUMENTATION →</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+
+            <button type="button" class="slider-side-arrow next" id="sliderSideNext" aria-label="Next Projects">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Bottom Slider Indicator: Interactive Dots & Instruction -->
+          <div class="projects-slider-footer reveal">
+            <div class="slider-dots" id="sliderDots"></div>
+            <div class="slider-instruction font-mono">
+              <span>← DRAG OR SWIPE TO EXPLORE // 04 PROJECTS →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 — CAPABILITIES / SKILLS (HoverDev Shift Highlight Tabs) -->
+      <section id="skills" class="capabilities-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">05 / TECHNICAL PROFICIENCIES</span>
+              <h2>CAPABILITIES</h2>
+              <p class="sec-subtitle">Core engineering skillsets across technical drafting, BIM modeling, and
+                estimation.</p>
+            </div>
+            <span class="sec-stamp">SHIFT HIGHLIGHT TABS · 6 CORE DOMAINS</span>
+          </div>
+
+          <!-- SHIFT HIGHLIGHT TABS CONTAINER -->
+          <div class="shift-tabs-container reveal">
+            <!-- Tabs Nav Grid -->
+            <div class="shift-tabs-nav-grid" role="tablist" aria-label="Engineering Capabilities">
+              <!-- Tab 01 -->
+              <div class="shift-tab-backer active-backer" data-backer-for="0">
+                <button type="button" class="shift-tab-btn active" role="tab" id="shift-tab-0" aria-selected="true"
+                  aria-controls="shift-panel-0" data-tab-idx="0">
+                  <span class="shift-tab-index font-mono">01 // DRAFTING</span>
+                  <span class="shift-tab-title">AutoCAD 2D<br>Drafting</span>
+                </button>
+              </div>
+
+              <!-- Tab 02 -->
+              <div class="shift-tab-backer" data-backer-for="1">
+                <button type="button" class="shift-tab-btn" role="tab" id="shift-tab-1" aria-selected="false"
+                  aria-controls="shift-panel-1" data-tab-idx="1">
+                  <span class="shift-tab-index font-mono">02 // MODELLING</span>
+                  <span class="shift-tab-title">BIM +<br>Revit</span>
+                </button>
+              </div>
+
+              <!-- Tab 03 -->
+              <div class="shift-tab-backer" data-backer-for="2">
+                <button type="button" class="shift-tab-btn" role="tab" id="shift-tab-2" aria-selected="false"
+                  aria-controls="shift-panel-2" data-tab-idx="2">
+                  <span class="shift-tab-index font-mono">03 // ANALYSIS</span>
+                  <span class="shift-tab-title">Drawing<br>Interpretation</span>
+                </button>
+              </div>
+
+              <!-- Tab 04 -->
+              <div class="shift-tab-backer" data-backer-for="3">
+                <button type="button" class="shift-tab-btn" role="tab" id="shift-tab-3" aria-selected="false"
+                  aria-controls="shift-panel-3" data-tab-idx="3">
+                  <span class="shift-tab-index font-mono">04 // QUANTIFICATION</span>
+                  <span class="shift-tab-title">Quantity<br>Estimation</span>
+                </button>
+              </div>
+
+              <!-- Tab 05 -->
+              <div class="shift-tab-backer" data-backer-for="4">
+                <button type="button" class="shift-tab-btn" role="tab" id="shift-tab-4" aria-selected="false"
+                  aria-controls="shift-panel-4" data-tab-idx="4">
+                  <span class="shift-tab-index font-mono">05 // CONTRACTS</span>
+                  <span class="shift-tab-title">Tendering<br>&amp; Bids</span>
+                </button>
+              </div>
+
+              <!-- Tab 06 -->
+              <div class="shift-tab-backer" data-backer-for="5">
+                <button type="button" class="shift-tab-btn" role="tab" id="shift-tab-5" aria-selected="false"
+                  aria-controls="shift-panel-5" data-tab-idx="5">
+                  <span class="shift-tab-index font-mono">06 // PLANNING</span>
+                  <span class="shift-tab-title">Project<br>Planning</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Tab Panels Showcase Wrap -->
+            <div class="shift-panels-wrap">
+              <!-- Panel 0: AutoCAD 2D Drafting -->
+              <div class="shift-tab-panel active" id="shift-panel-0" role="tabpanel" aria-labelledby="shift-tab-0">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 01 // DRAFTING</div>
+                    <h3 class="shift-panel-heading">AutoCAD 2D Architectural Drafting &amp; Layouts</h3>
+                    <p class="shift-panel-desc">
+                      Production of comprehensive architectural floor plans, sections, and elevations. Specialized in
+                      strict layer hierarchy (walls, doors, windows, dimensions, stairs, furniture), millimeter/inch
+                      scale management, dimension styles, and plot setups.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">Floor Plans (G+1, 2BHK, 3BHK)</span>
+                      <span class="shift-tag">Layer Standards (AIA/ISO)</span>
+                      <span class="shift-tag">Section &amp; Elevation Cuts</span>
+                      <span class="shift-tag">Staircase &amp; Core Detailing</span>
+                      <span class="shift-tag">Annotation Scales (1:50, 1:100)</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#work" class="btn btn-primary btn-draw-outline">
+                        <span>EXPLORE CAD DRAWINGS →</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Primary Tool</span>
+                        <span class="tech-spec-val">Autodesk AutoCAD 2026</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Drawing Standards</span>
+                        <span class="tech-spec-val">IS:962 / Architectural Code</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Deliverable Formats</span>
+                        <span class="tech-spec-val">DWG · PDF Vector · High-res Sheets</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Completed Sets</span>
+                        <span class="tech-spec-val">4 Comprehensive Residential Sets</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 1: BIM + Revit -->
+              <div class="shift-tab-panel" id="shift-panel-1" role="tabpanel" aria-labelledby="shift-tab-1">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 02 // MODELLING</div>
+                    <h3 class="shift-panel-heading">BIM Fundamentals &amp; Autodesk Revit</h3>
+                    <p class="shift-panel-desc">
+                      Certified hands-on knowledge in Building Information Modeling (BIM) principles and Autodesk Revit
+                      workflows. Creating parametric architectural components, levels, grids, wall assemblies, and
+                      extracting coordinated views.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">Parametric 3D Modeling</span>
+                      <span class="shift-tag">Levels &amp; Grid Systems</span>
+                      <span class="shift-tag">Revit Families &amp; Walls</span>
+                      <span class="shift-tag">Coordinated View Generation</span>
+                      <span class="shift-tag">LOD 200/300 Principles</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#certifications" class="btn btn-secondary btn-draw-outline">
+                        <span>VIEW BIM CERTIFICATE ↗</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Primary Tool</span>
+                        <span class="tech-spec-val">Autodesk Revit</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Certification</span>
+                        <span class="tech-spec-val">BIM Fundamentals Verified</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Interoperability</span>
+                        <span class="tech-spec-val">DWG / RVT Coordination</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Focus</span>
+                        <span class="tech-spec-val">Parametric Model Geometry</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 2: Drawing Interpretation -->
+              <div class="shift-tab-panel" id="shift-panel-2" role="tabpanel" aria-labelledby="shift-tab-2">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 03 // ANALYSIS</div>
+                    <h3 class="shift-panel-heading">Technical Drawing Interpretation &amp; Structural Analysis</h3>
+                    <p class="shift-panel-desc">
+                      Rigorous deciphering of complex civil engineering blueprints. Identifying load paths, structural
+                      grids, column/beam orientations, plinth levels, sill/lintel heights, staircase rise-and-tread
+                      ratios, and reconciling discrepancies between plan and elevation.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">Grid Cross-Referencing</span>
+                      <span class="shift-tag">Plinth &amp; FFL Reconciliation</span>
+                      <span class="shift-tag">Door &amp; Window Schedules</span>
+                      <span class="shift-tag">Stair Riser-Tread Compliance</span>
+                      <span class="shift-tag">Drawing Legend Deciphering</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#workflow" class="btn btn-primary btn-draw-outline">
+                        <span>SEE INTERPRETATION PIPELINE →</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Skill Type</span>
+                        <span class="tech-spec-val">Cognitive &amp; Spatial Analysis</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Core Verification</span>
+                        <span class="tech-spec-val">Dimensional Closing Loops</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Standards</span>
+                        <span class="tech-spec-val">Indian Standard Building Codes</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Application</span>
+                        <span class="tech-spec-val">Pre-construction Validation</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 3: Quantity Estimation -->
+              <div class="shift-tab-panel" id="shift-panel-3" role="tabpanel" aria-labelledby="shift-tab-3">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 04 // QUANTIFICATION</div>
+                    <h3 class="shift-panel-heading">Quantity Surveying &amp; AI-Assisted Cost Estimation</h3>
+                    <p class="shift-panel-desc">
+                      Detailed Bill of Quantities (BOQ) preparation using Microsoft Excel paired with modern AI
+                      verification tools. Accurately deriving concrete cubic volumes, brickwork masonry quantities,
+                      plaster areas, flooring square footages, and reinforcement approximations.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">Excel Take-off Spreadsheets</span>
+                      <span class="shift-tag">Masonry &amp; Concrete Cubics</span>
+                      <span class="shift-tag">Finishes &amp; Plaster Surface Take-offs</span>
+                      <span class="shift-tag">AI-Assisted Cross-checking</span>
+                      <span class="shift-tag">Cost Rate Integration</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#software" class="btn btn-secondary btn-draw-outline">
+                        <span>CHECK ESTIMATION STACK →</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Core Tools</span>
+                        <span class="tech-spec-val">Microsoft Excel · AI Toolset</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Methodology</span>
+                        <span class="tech-spec-val">Centerline &amp; Long-Wall Short-Wall</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Output</span>
+                        <span class="tech-spec-val">Itemized BOQ &amp; Rate Analysis</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Precision</span>
+                        <span class="tech-spec-val">Multi-variable Cross-audited</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Tendering & Bids -->
+              <div class="shift-tab-panel" id="shift-panel-4" role="tabpanel" aria-labelledby="shift-tab-4">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 05 // CONTRACTS</div>
+                    <h3 class="shift-panel-heading">Tendering, Contract Documentation &amp; Bid Evaluation</h3>
+                    <p class="shift-panel-desc">
+                      Certified proficiency in public and private tendering systems. Preparing Notice Inviting Tenders
+                      (NIT), formulating technical contract specifications, analyzing contractor qualification criteria,
+                      tender conditions, and comparative cost assessment.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">NIT Documentation</span>
+                      <span class="shift-tag">Technical Specification Drafting</span>
+                      <span class="shift-tag">Contractor Qualification Audit</span>
+                      <span class="shift-tag">Bid Evaluation Statements</span>
+                      <span class="shift-tag">Tender Condition Compliance</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#certifications" class="btn btn-secondary btn-draw-outline">
+                        <span>VIEW TENDERING CERTIFICATE ↗</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Certification</span>
+                        <span class="tech-spec-val">Tendering &amp; Bid Process Verified</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Document Types</span>
+                        <span class="tech-spec-val">NIT, Tender Conditions, BOQ</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Compliance</span>
+                        <span class="tech-spec-val">Public Works &amp; Industry Standards</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Application</span>
+                        <span class="tech-spec-val">Contract Award &amp; Selection</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 5: Project Planning -->
+              <div class="shift-tab-panel" id="shift-panel-5" role="tabpanel" aria-labelledby="shift-tab-5">
+                <div class="shift-panel-grid">
+                  <div class="shift-panel-main">
+                    <div class="shift-panel-badge font-mono">CAPABILITY 06 // MANAGEMENT</div>
+                    <h3 class="shift-panel-heading">Floor-Wise Work Planning &amp; Drawing Archiving</h3>
+                    <p class="shift-panel-desc">
+                      Structuring sequenced phase-by-phase execution schedules. Organizing drawing revision history,
+                      tracking drawing register sheets, standardizing title block metadata, and ensuring consistent
+                      traceability across civil execution packages.
+                    </p>
+                    <div class="shift-panel-tags">
+                      <span class="shift-tag">Floor-wise Scheduling</span>
+                      <span class="shift-tag">Sheet Register &amp; Revision Log</span>
+                      <span class="shift-tag">Title Block Standardization</span>
+                      <span class="shift-tag">Traceable CAD Deliverables</span>
+                      <span class="shift-tag">Site Documentation Packages</span>
+                    </div>
+                    <div class="shift-panel-actions">
+                      <a href="#/documentation" onclick="window.showDocumentationView();"
+                        class="btn btn-primary btn-draw-outline">
+                        <span>OPEN DOCUMENTATION ARCHIVE →</span>
+                        <span class="btn-draw-line btn-draw-top"></span>
+                        <span class="btn-draw-line btn-draw-right"></span>
+                        <span class="btn-draw-line btn-draw-bottom"></span>
+                        <span class="btn-draw-line btn-draw-left"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="shift-panel-sidebar">
+                    <div class="tech-spec-box">
+                      <div class="tech-spec-header font-mono">SPECIFICATION BREAKDOWN</div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Core Function</span>
+                        <span class="tech-spec-val">Timeline Sequencing &amp; Control</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Sheet Tracking</span>
+                        <span class="tech-spec-val">Indexed A-101 through A-104</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Revision Discipline</span>
+                        <span class="tech-spec-val">Traceable Delta Markers</span>
+                      </div>
+                      <div class="tech-spec-row">
+                        <span class="tech-spec-label">Output</span>
+                        <span class="tech-spec-val">Archival-Grade Construction Packs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 — AEC WORKFLOW SECTION (Connected Animated Pipeline) -->
+      <section id="workflow" class="workflow-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">06 / PROCESS</span>
+              <h2>AEC WORKFLOW</h2>
+              <p class="sec-subtitle">A methodical six-stage pipeline connecting drafting, quantification and technical
+                documentation.</p>
+            </div>
+          </div>
+
+          <div class="workflow-pipeline-wrapper reveal">
+            <!-- Animated Connection Conduit SVG Line & Pulse -->
+            <div class="workflow-conduit-container" aria-hidden="true">
+              <div class="workflow-conduit-track">
+                <div class="workflow-conduit-active-beam" id="workflowActiveBeam"></div>
+                <div class="workflow-conduit-traveler"></div>
+              </div>
+            </div>
+
+            <!-- Workflow 6 Steps Track -->
+            <div class="workflow-track" id="workflowTrack">
+              <!-- Step 01 -->
+              <div class="workflow-step active" data-step="1" id="wfStep1">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">01</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 01</span>
+                  <h4 class="workflow-step-name">INTERPRET</h4>
+                  <p class="workflow-step-desc">Read and understand drawings, structural grids, dimensions, scales and
+                    notes.</p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="workflow-step" data-step="2" id="wfStep2">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">02</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 02</span>
+                  <h4 class="workflow-step-name">DRAFT</h4>
+                  <p class="workflow-step-desc">Prepare plans, sections and elevations with accurate, standardized CAD
+                    layers.</p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="workflow-step" data-step="3" id="wfStep3">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">03</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 03</span>
+                  <h4 class="workflow-step-name">QUANTIFY</h4>
+                  <p class="workflow-step-desc">Derive physical quantities, schedules, and materials directly from
+                    verified drawings.</p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="workflow-step" data-step="4" id="wfStep4">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">04</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 04</span>
+                  <h4 class="workflow-step-name">ESTIMATE</h4>
+                  <p class="workflow-step-desc">Organize structured cost estimates in Excel and audit using AI tools.
+                  </p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+
+              <!-- Step 05 -->
+              <div class="workflow-step" data-step="5" id="wfStep5">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">05</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 05</span>
+                  <h4 class="workflow-step-name">DOCUMENT</h4>
+                  <p class="workflow-step-desc">Compile clean, traceable drawing documentation sets for site execution.
+                  </p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+
+              <!-- Step 06 -->
+              <div class="workflow-step" data-step="6" id="wfStep6">
+                <div class="workflow-node-wrapper">
+                  <div class="workflow-node-ripple"></div>
+                  <div class="workflow-node">06</div>
+                </div>
+                <div class="workflow-step-content">
+                  <span class="workflow-step-phase font-mono">PHASE 06</span>
+                  <h4 class="workflow-step-name">PLAN</h4>
+                  <p class="workflow-step-desc">Prepare floor-wise work planning, milestone schedules, and construction
+                    timelines.</p>
+                  <div class="workflow-step-connector-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 — TOOLS & SOFTWARE (Rule 17) -->
+      <section id="software" class="software-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">07 / TECHNICAL STACK</span>
+              <h2>TOOLS &amp; SOFTWARE</h2>
+              <p class="sec-subtitle">Applied software tools for technical drafting, modeling and estimation.</p>
+            </div>
+            <span class="sec-stamp">ACTIVE TOOLSET</span>
+          </div>
+
+          <div class="software-grid reveal">
+            <div class="software-card">
+              <div class="software-icon-box" title="Autodesk AutoCAD">
+                <svg viewBox="94.5 137.2 21.5 21.5" class="software-svg" aria-label="Autodesk AutoCAD"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M 115.30755,142.40605 H 96.288649 v 14.0118 c 0,0.8177 0.6688,1.4866 1.4864,1.4866 h 17.532601 v -15.4985 z"
+                    fill="#78082a" />
+                  <path
+                    d="m 98.809249,153.32555 c -0.0572,0.1719 -0.97,1.0567 -0.97,1.0567 l -3.383,2.0655 v -15.5162 l 3.383,-2.0249 4.446201,11.2531 -3.476601,3.1661 z"
+                    fill="#e85984" />
+                  <path
+                    d="m 97.839549,138.90645 h 14.730301 c 0.6541,0 1.1893,0.5353 1.1893,1.1893 v 14.2863 H 97.839549 v -15.4758 z"
+                    fill="#e51050" />
+                  <path
+                    d="m 110.32225,151.15505 h -1.9673 l -0.779,-2.0538 h -3.618 l -0.7496,2.0538 h -1.9319 l 3.5026,-9.0206 h 1.9297 l 3.6138,9.0206 z m -3.3387,-3.5782 -1.2536,-3.3387 -1.218,3.3387 z"
+                    fill="#ffffff" />
+                </svg>
+              </div>
+              <div class="software-details">
+                <span class="software-name">AutoCAD</span>
+                <span class="software-role">2D Drafting &amp; Layouts</span>
+              </div>
+            </div>
+
+            <div class="software-card">
+              <div class="software-icon-box" title="Autodesk Revit">
+                <svg viewBox="-5 -16 348 348" class="software-svg" aria-label="Autodesk Revit"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m 54.523,2.902 0.08,-0.136 256.517,56.687 h 26.646 V 310.765 H 47.952 c -10.052,0 -18.2,-8.149 -18.2,-18.2 v -24.624 z"
+                    fill="#0c3d91" />
+                  <path d="M 312.915,254.763 H 54.523 V 2.902 l 0.08,-0.152 h 240.112 c 10.052,0 18.2,8.149 18.2,18.2 z"
+                    fill="#186bff" />
+                  <path d="M 0,35.652 V 287.664 L 54.603,254.763 V 2.75 Z" fill="#679ae7" />
+                  <path
+                    d="m 240.734,181.263 v 21.796 a 30.7,30.7 0 0 1 -14.531,3.113 c -12.664,0 -22.627,-3.735 -30.515,-20.133 l -17.437,-35.292 h -15.984 v 52.311 H 125.938 V 57.748 h 55.011 c 31.553,0 52.728,15.155 52.728,39.442 v 13.078 c 0,14.322 -8.927,25.534 -23.043,32.59 l 16.191,30.517 a 12.354,12.354 0 0 0 12.249,7.888 z m -78.467,-54.389 h 15.777 c 11.623,0 19.304,-6.019 19.304,-17.229 V 99.267 c 0,-11.002 -7.888,-16.605 -19.304,-16.605 h -15.777 z"
+                    fill="#ffffff" />
+                </svg>
+              </div>
+              <div class="software-details">
+                <span class="software-name">Revit</span>
+                <span class="software-role">BIM Modeling Fundamentals</span>
+              </div>
+            </div>
+
+            <div class="software-card">
+              <div class="software-icon-box" title="Microsoft Excel">
+                <svg viewBox="0 -80 2290 2290" class="software-svg" aria-label="Microsoft Excel"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#185C37"
+                    d="M1437.75,1011.75L532.5,852v1180.393c0,53.907,43.7,97.607,97.607,97.607h1562.036c53.907,0,97.607-43.7,97.607-97.607V1597.5L1437.75,1011.75z" />
+                  <path fill="#21A366"
+                    d="M1437.75,0H630.107C576.2,0,532.5,43.7,532.5,97.607V532.5l905.25,532.5L1917,1224.75L2289.75,1065V532.5L1437.75,0z" />
+                  <path fill="#107C41" d="M532.5,532.5h905.25V1065H532.5V532.5z" />
+                  <path opacity="0.1"
+                    d="M1180.393,426H532.5v1331.25h647.893c53.834-0.175,97.432-43.773,97.607-97.607V523.607C1277.825,469.773,1234.227,426.175,1180.393,426z" />
+                  <path opacity="0.2"
+                    d="M1127.143,479.25H532.5V1810.5h594.643c53.834-0.175,97.432-43.773,97.607-97.607V576.857C1224.575,523.023,1180.977,479.425,1127.143,479.25z" />
+                  <path opacity="0.2"
+                    d="M1127.143,479.25H532.5V1704h594.643c53.834-0.175,97.432-43.773,97.607-97.607V576.857C1224.575,523.023,1180.977,479.425,1127.143,479.25z" />
+                  <linearGradient id="excelGradGridSrc" gradientUnits="userSpaceOnUse" x1="203.5" y1="403" x2="968"
+                    y2="1727">
+                    <stop offset="0" stop-color="#18884F" />
+                    <stop offset="0.5" stop-color="#117E43" />
+                    <stop offset="1" stop-color="#0B6631" />
+                  </linearGradient>
+                  <path fill="url(#excelGradGridSrc)"
+                    d="M97.607,479.25h976.285c53.907,0,97.607,43.7,97.607,97.607v976.285c0,53.907-43.7,97.607-97.607,97.607H97.607C43.7,1650.75,0,1607.05,0,1553.143V576.857C0,522.95,43.7,479.25,97.607,479.25z" />
+                  <path fill="#FFFFFF"
+                    d="M302.3,1382.264l205.332-318.169L319.5,747.683h151.336l102.666,202.35c9.479,19.223,15.975,33.494,19.49,42.919h1.331c6.745-15.336,13.845-30.228,21.3-44.677L725.371,747.79h138.929l-192.925,314.548L869.2,1382.263H721.378L602.79,1160.158c-5.586-9.45-10.326-19.376-14.164-29.66h-1.757c-3.474,10.075-8.083,19.722-13.739,28.755l-122.102,223.011H302.3z" />
+                  <path fill="#33C481" d="M2192.143,0H1437.75v532.5h852V97.607C2289.75,43.7,2246.05,0,2192.143,0z" />
+                  <path fill="#107C41" d="M1437.75,1065h852v532.5h-852V1065z" />
+                </svg>
+              </div>
+              <div class="software-details">
+                <span class="software-name">Microsoft Excel</span>
+                <span class="software-role">Quantity Take-off &amp; Cost Estimation</span>
+              </div>
+            </div>
+
+            <div class="software-card">
+              <div class="software-icon-box" title="AI-assisted tools">
+                <img src="assets/icons/ai-tools.png" alt="AI-assisted tools" class="software-svg" width="34"
+                  height="34" />
+              </div>
+              <div class="software-details">
+                <span class="software-name">AI-assisted tools</span>
+                <span class="software-role">Estimation Cross-checking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 08 — CERTIFICATIONS SECTION (Rule 21) -->
+      <section id="certifications" class="certifications-section">
+        <div class="container">
+          <div class="sec-head reveal">
+            <div class="sec-head-main">
+              <span class="sec-code">08 / VERIFIED CREDENTIALS</span>
+              <h2>CERTIFICATIONS</h2>
+              <p class="sec-subtitle">Verified workshop trainings in CAD drafting, tendering, and Revit + BIM.</p>
+            </div>
+            <span class="sec-stamp">3 VERIFIED</span>
+          </div>
+
+          <div class="certifications-list reveal">
+            <div class="cert-row">
+              <div class="cert-meta">
+                <span class="cert-code">CERT-01</span>
+                <h3 class="cert-title">AutoCAD Workshop Certification</h3>
+              </div>
+              <a class="btn btn-secondary btn-sm"
+                href="https://drive.google.com/file/d/1FWnqsbN0KWfNtY7lS23VORrBEKIEX1YV/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE ↗</a>
+            </div>
+
+            <div class="cert-row">
+              <div class="cert-meta">
+                <span class="cert-code">CERT-02</span>
+                <h3 class="cert-title">Tendering and Bid Process Certification</h3>
+              </div>
+              <a class="btn btn-secondary btn-sm"
+                href="https://drive.google.com/file/d/1tK17UspLVR3kTkDD1RQwixeQaqYMzHE8/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE ↗</a>
+            </div>
+
+            <div class="cert-row">
+              <div class="cert-meta">
+                <span class="cert-code">CERT-03</span>
+                <h3 class="cert-title">BIM Fundamentals Workshop Certification</h3>
+              </div>
+              <a class="btn btn-secondary btn-sm"
+                href="https://drive.google.com/file/d/1hcWzq-l94GDkrdK3VyRbF9pGm7B8un5g/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER (Reference Minimalist Layout - Blended)
+         ========================================================================== -->
+    <footer id="contact" class="site-footer ref-footer" role="contentinfo">
+      <div class="ref-footer-inner">
+        <!-- 01. Brand (Top Center) -->
+        <div class="ref-footer-brand">
+          <span class="ref-footer-brand-name">Rishabh Dey</span>
+        </div>
+
+        <!-- 02. Navigation Links (Centered) -->
+        <nav class="ref-footer-nav" aria-label="Footer Navigation">
+          <a href="#about" class="ref-footer-nav-link">About</a>
+          <a href="#education" class="ref-footer-nav-link">Education</a>
+          <a href="#work" class="ref-footer-nav-link">Work</a>
+          <a href="#skills" class="ref-footer-nav-link">Skills</a>
+          <a href="#workflow" class="ref-footer-nav-link">Workflow</a>
+          <a href="#certifications" class="ref-footer-nav-link">Certifications</a>
+          <a href="#/documentation" onclick="window.showDocumentationView();" class="ref-footer-nav-link">Archive</a>
+          <a href="assets/resume/Rishabh_Dey_Resume.pdf" target="_blank" rel="noopener noreferrer"
+            data-action="view-resume" class="ref-footer-nav-link" title="View Rishabh Dey's Resume">Resume</a>
+        </nav>
+
+        <!-- 03. Dotted Divider Line -->
+        <div class="ref-footer-divider" aria-hidden="true"></div>
+
+        <!-- 04. Bottom Bar: Social Icons (Mail, LinkedIn, GitHub) Centered -->
+        <div class="ref-footer-bottom">
+          <div class="ref-footer-socials">
+            <a href="mailto:deyrishabh630@gmail.com" class="ref-footer-social-link" aria-label="Email"
+              title="deyrishabh630@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rishabh-dey-68039a264/" target="_blank" rel="noopener noreferrer"
+              class="ref-footer-social-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ref-footer-social-link"
+              aria-label="GitHub" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       DOCUMENTATION VIEW (Rule 23)
+       ========================================================================== -->
+  <div id="view-docs" class="docs-view" style="display:none;">
+    <div class="container">
+      <div class="docs-header-block">
+        <span class="sec-code">PROJECT ARCHIVE // TECHNICAL DRAWINGS</span>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 3.8rem); margin: 8px 0 16px;">PROJECT DOCUMENTATION</h1>
+        <p class="sec-subtitle">Comprehensive technical drawing archive and documentation sets for projects A-101
+          through A-104.</p>
+        <div style="margin-top: 24px;">
+          <a href="#/" class="btn btn-secondary" onclick="window.showHomeView();">← BACK TO PORTFOLIO</a>
+        </div>
+      </div>
+
+      <!-- A-101 Documentation -->
+      <article class="docs-project-item" id="doc-A-101">
+        <span class="card-code">A-101 · FEATURED</span>
+        <h2 style="font-size: 1.8rem; margin: 8px 0 12px;">2-Storey Residential Building: Full CAD Package</h2>
+        <p style="color: var(--ink-muted); max-width: 68ch; line-height: 1.65; margin-bottom: 20px;">
+          Architectural floor plans, structural column layouts and electrical wiring plans for a compact family home,
+          ready for construction reference and design study.
+        </p>
+        <div class="specs-table" style="max-width: 720px; margin-bottom: 24px;">
+          <div class="spec-cell">
+            <div class="spec-label">Plot</div>
+            <div class="spec-val">40' × 63'</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-label">Bedrooms</div>
+            <div class="spec-val">2 (12'3"×16', 13'×16')</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-label">Kitchen</div>
+            <div class="spec-val">8' × 10'</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-label">Living / Hall</div>
+            <div class="spec-val">22'2" × 21'9"</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-label">Bathrooms</div>
+            <div class="spec-val">2</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-label">Plinth</div>
+            <div class="spec-val">+2'6"</div>
+          </div>
+          <div class="spec-cell" style="grid-column: span 2;">
+            <div class="spec-label">Staircase</div>
+            <div class="spec-val">W 3'6" · R 7–7.5" · T 10"</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-accent btn-sm" data-action="add-drawing" data-project="A-101">ADD DRAWING
+            +</button>
+          <button type="button" class="btn btn-secondary btn-sm" data-action="view-fullscreen" data-project="A-101">VIEW
+            FULLSCREEN ↗</button>
+          <a href="assets/projects/A-101/A-101_2_Storey_Residential_Building_Documentation.pdf" target="_blank"
+            rel="noopener noreferrer" class="btn btn-technical btn-sm" data-action="download-pdf" data-project="A-101"
+            title="View Full Documentation PDF">VIEW DOCUMENTATION PDF
+            ↗</a>
+        </div>
+      </article>
+
+      <!-- A-102 Documentation -->
+      <article class="docs-project-item" id="doc-A-102">
+        <span class="card-code">A-102</span>
+        <h2 style="font-size: 1.5rem; margin: 8px 0 12px;">Central-Core Multi-Dwelling Unit (MDU) Floor Plan</h2>
+        <p style="color: var(--ink-muted); max-width: 68ch; line-height: 1.65; margin-bottom: 20px;">
+          Typical multi-family floor plan featuring four 2BHK units, complete space layout, vertical core access, and
+          balcony placements.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-accent btn-sm" data-action="add-drawing" data-project="A-102">ADD DRAWING
+            +</button>
+          <button type="button" class="btn btn-secondary btn-sm" data-action="view-fullscreen" data-project="A-102">VIEW
+            FULLSCREEN ↗</button>
+          <a href="assets/projects/A-102/A-102_Central_Core_MDU_Documentation.pdf" target="_blank"
+            rel="noopener noreferrer" class="btn btn-technical btn-sm" data-action="download-pdf"
+            data-project="A-102">VIEW DOCUMENTATION PDF
+            ↗</a>
+        </div>
+      </article>
+
+      <!-- A-103 Documentation -->
+      <article class="docs-project-item" id="doc-A-103">
+        <span class="card-code">A-103</span>
+        <h2 style="font-size: 1.5rem; margin: 8px 0 12px;">Compact 2BHK Residential Unit: Architectural Plan, Elevation
+          & Sectional Details</h2>
+        <p style="color: var(--ink-muted); max-width: 68ch; line-height: 1.65; margin-bottom: 20px;">
+          Compact 2BHK AutoCAD 2D drafting comprising ground plan, front elevation, and Section AB with dimensioned room
+          layouts, staircase, parking, and structural foundation details.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-accent btn-sm" data-action="add-drawing" data-project="A-103">ADD DRAWING
+            +</button>
+          <button type="button" class="btn btn-secondary btn-sm" data-action="view-fullscreen" data-project="A-103">VIEW
+            FULLSCREEN ↗</button>
+          <a href="assets/projects/A-103/A-103_Residential_Unit_Documentation.pdf" target="_blank"
+            rel="noopener noreferrer" class="btn btn-technical btn-sm" data-action="download-pdf"
+            data-project="A-103">VIEW DOCUMENTATION PDF
+            ↗</a>
+        </div>
+      </article>
+
+      <!-- A-104 Documentation -->
+      <article class="docs-project-item" id="doc-A-104" style="border-bottom:none;">
+        <span class="card-code">A-104</span>
+        <h2 style="font-size: 1.5rem; margin: 8px 0 12px;">Furnished 3 BHK Floor Plan</h2>
+        <p style="color: var(--ink-muted); max-width: 68ch; line-height: 1.65; margin-bottom: 20px;">
+          Furnished layout for a 3 BHK unit, showing room arrangement and furniture placement.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-accent btn-sm" data-action="add-drawing" data-project="A-104">ADD DRAWING
+            +</button>
+          <button type="button" class="btn btn-secondary btn-sm" data-action="view-fullscreen" data-project="A-104">VIEW
+            FULLSCREEN ↗</button>
+          <a href="assets/projects/A-104/A-104_Floor_Plan_Documentation.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-technical btn-sm" data-action="download-pdf" data-project="A-104">VIEW DOCUMENTATION PDF
+            ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULLSCREEN DRAWING LIGHTBOX VIEWER (Rules 14 & 37)
+       ========================================================================== -->
+  <div id="drawingLightbox" class="drawing-lightbox" role="dialog" aria-modal="true"
+    aria-label="Technical Drawing Viewer">
+    <div class="lightbox-header">
+      <div class="lightbox-title">
+        <span class="lightbox-code" id="lightboxCode">A-101</span>
+        <span>·</span>
+        <span id="lightboxTitle">GROUND FLOOR PLAN</span>
+      </div>
+      <div class="lightbox-controls">
+        <button type="button" class="lightbox-btn" id="lightboxPrevBtn" title="Previous Drawing (←)"
+          aria-label="Previous sheet">
+          <span>◀ PREV</span>
+        </button>
+        <button type="button" class="lightbox-btn" id="lightboxNextBtn" title="Next Drawing (→)"
+          aria-label="Next sheet">
+          <span>NEXT ▶</span>
+        </button>
+        <button type="button" class="lightbox-btn" id="lightboxZoomOutBtn" title="Zoom Out (-)"
+          aria-label="Zoom out">−</button>
+        <button type="button" class="lightbox-btn" id="lightboxResetBtn" title="Reset Zoom (0)"
+          aria-label="Reset zoom">100%</button>
+        <button type="button" class="lightbox-btn" id="lightboxZoomInBtn" title="Zoom In (+)"
+          aria-label="Zoom in">+</button>
+        <button type="button" class="lightbox-btn lightbox-close-btn" id="lightboxCloseBtn" title="Close (ESC)"
+          aria-label="Close drawing viewer">
+          <span class="close-icon" aria-hidden="true">✕</span>
+          <span>CLOSE</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="lightbox-body" id="lightboxBody">
+      <button type="button" class="lightbox-side-arrow prev" id="lightboxSidePrevBtn" title="Previous Drawing Sheet"
+        aria-label="Previous sheet">‹</button>
+      <div class="lightbox-canvas-wrapper" id="lightboxCanvasWrapper">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Full Drawing View"
+          title="Click to view next drawing sheet">
+      </div>
+      <button type="button" class="lightbox-side-arrow next" id="lightboxSideNextBtn" title="Next Drawing Sheet"
+        aria-label="Next sheet">›</button>
+      <div id="lightboxEmptyPlaceholder" class="lightbox-empty-placeholder" style="display:none;">
+        <div class="placeholder-crosshair-icon" style="width:48px;height:48px;font-size:20px;margin-bottom:12px;">✛
+        </div>
+        <div class="lightbox-placeholder-title"
+          style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:var(--ink);letter-spacing:0.05em;margin-bottom:8px;">
+          NO DRAWING UPLOADED</div>
+        <p class="lightbox-placeholder-sub"
+          style="font-size:12px;color:var(--ink-muted);max-width:440px;line-height:1.5;margin-bottom:16px;">Click below
+          to load a drawing image into this sheet.</p>
+        <button type="button" class="btn btn-accent btn-sm" id="lightboxPlaceholderUploadBtn">UPLOAD DRAWING IMAGE
+          +</button>
+      </div>
+    </div>
+
+    <!-- Interactive Sheet Strip inside Lightbox -->
+    <div class="lightbox-sheet-strip" id="lightboxSheetStrip"></div>
+
+    <div class="lightbox-footer">
+      <span id="lightboxSheetCount">SHEET 01 / 04</span>
+      <span style="color: var(--ink-dim);">CLICK IMAGE OR ARROWS TO CYCLE DRAWINGS · ESC TO CLOSE · + / − TO ZOOM</span>
+    </div>
+
+    <input type="file" id="lightboxFileInput" class="hidden-file-input" accept="image/*" multiple>
+  </div>
+
+  <!-- Toast Message Element -->
+  <div id="aecToast" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
