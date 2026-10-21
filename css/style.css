@@ -1032,7 +1032,7 @@ button:focus-visible {
   object-fit: cover;
   object-position: center top;
   display: none;
-  cursor: pointer;
+  cursor: default;
 }
 
 .hero-portrait-img.visible {

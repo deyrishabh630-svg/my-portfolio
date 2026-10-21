@@ -451,9 +451,6 @@
   function initProfilePhoto() {
     const heroProfileImg = document.getElementById('heroProfileImg');
     const heroPortraitPlaceholder = document.getElementById('heroPortraitPlaceholder');
-    const heroPhotoInput = document.getElementById('heroPhotoInput');
-    const addHeroPhotoBtn = document.getElementById('addHeroPhotoBtn');
-    const changePhotoBtn = document.getElementById('changePhotoBtn');
 
     if (heroProfileImg) {
       const testImg = new Image();
@@ -462,44 +459,11 @@
         heroProfileImg.classList.add('visible');
         if (heroPortraitPlaceholder) heroPortraitPlaceholder.style.display = 'none';
       };
+      testImg.onerror = () => {
+        heroProfileImg.classList.remove('visible');
+        if (heroPortraitPlaceholder) heroPortraitPlaceholder.style.display = 'flex';
+      };
       testImg.src = 'assets/images/profile.jpg';
-
-      heroProfileImg.addEventListener('click', () => {
-        heroPhotoInput?.click();
-      });
-    }
-
-    if (addHeroPhotoBtn && heroPhotoInput) {
-      addHeroPhotoBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        heroPhotoInput.click();
-      });
-    }
-
-    if (changePhotoBtn && heroPhotoInput) {
-      changePhotoBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        heroPhotoInput.click();
-      });
-    }
-
-    if (heroPhotoInput) {
-      heroPhotoInput.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (file) {
-          const url = URL.createObjectURL(file);
-          if (heroProfileImg) {
-            heroProfileImg.src = url;
-            heroProfileImg.classList.add('visible');
-          }
-          if (heroPortraitPlaceholder) {
-            heroPortraitPlaceholder.style.display = 'none';
-          }
-          if (window.showAECToast) {
-            window.showAECToast('✓ Profile photo updated! Save file as assets/images/profile.jpg for permanent storage.');
-          }
-        }
-      });
     }
   }
 
